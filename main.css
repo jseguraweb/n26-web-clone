@@ -4,13 +4,33 @@
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'Roboto', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-/* ------ BACKGROUND COLORS ------ */
+a {
+    text-decoration: none;
+}
 
+.green-button {
+    background-color: #36A18B;
+    color: #fff;
+    font-size: 1.1rem;
+    border: 0px;
+    border-radius: 10px;
+    padding: 1rem 1.8rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.green-button:hover {
+    box-shadow: -1px 5px 8px -5px rgba(0, 0, 0, 0.8);
+    transform: translate(0px, -2px);
+    transition-duration: 0.3s;
+}
+
+/* ------ BACKGROUND COLORS ------ */
 
 .background-white {
     background-color: #FFFFFF;
@@ -24,22 +44,78 @@
     background-color: #C8D7E5;
 }
 
-.green-button {
-    background-color: #36A18B;
+/* ------ FONT COLORS ------ */
+
+h1, h2, h3, p, a {
+    color: #1B1B1B;
 }
+
+/* ------ TYPOGRAPHY ------ */
+
+#logo {
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+#logo span {
+    text-decoration: underline overline;
+}
+
+#logo sup {
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 0.6rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.7rem;
+}
+
 
 
 /* ------------------- MOBILE PHONE ------------------- */
 
 @media screen and (max-width: 576px) {
 
-/* typography */
-
+.sides-padding {
+    padding: 2rem;
+}
 
 /* header */
 
+header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+}
 
 /* navigation bar */
+
+#menu-list {
+    display: none;
+}
 
 #toggle-navbar {
     background-color: transparent;
@@ -48,14 +124,35 @@
 }
 
 .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px 0;
+    width: 30px;
+    height: 2px;
+    background-color: #1B1B1B;
+    margin: 8px 0;
 }
 
+/* main */
 
+main {
+    width: 100%;
+    height: 90vh;
+    background-image: url("img/landing-main-picture-mobile.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-
+.blur {
+    width: 100%;
+    height: 100%;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(236, 233, 230, 0.6));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(236, 233, 230, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+}
 
 } 
