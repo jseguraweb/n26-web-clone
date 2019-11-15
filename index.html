@@ -12,23 +12,27 @@
 </head>
 
 <body>
-
     <header>
-        <h3 id="logo"><a href="#"><span>N</span>26<sup>DE</sup></a></h3>
-        <nav>
+        <div id="mobile-nav-display">
+            <h3 id="logo"><a href="#"><span>N</span>26<sup>DE</sup></a></h3>
             <button id="toggle-navbar">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </button>
+        </div>
+        <nav>
             <ul id="menu-list">
-                <li><a href="#">Bank Account</a></li>
-                <li><a href="#">N26 You</a></li>
-                <li><a href="#">Metal</a></li>
-                <li><a href="#">N26 Business</a></li>
-                <li><a href="#">Compare plans</a></li>
-                <li><a href="#">EN / DE</a></li>
-                <li><a href="#">Online Banking</a></li>
+                <li class="menu-option link"><a href="#">Bank Account</a></li>
+                <li class="menu-option link"><a class="green-point" href="#">N26 You</a></li>
+                <li class="menu-option link"><a href="#">Metal</a></li>
+                <li class="menu-option link"><a href="#">N26 Business</a></li>
+                <li class="menu-option link"><a href="#">Compare plans</a></li>
+                <li class="menu-option languages">
+                    <a href="#">EN / <span class="link">DE</span></a>
+                    <a href="#"><button class="green-button-nav">Open Bank Account</button></a>
+                </li>
+                <li class="menu-option link"><a href="#">Online Banking</a></li>
             </ul>
         </nav>
     </header>
