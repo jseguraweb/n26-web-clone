@@ -62,9 +62,10 @@ select#countries {
     font-size: 0.8rem;
     font-weight: 500;
     padding: 0.5rem 1.8rem;
-    border-radius: 10px;
+    border-radius: 7px;
     margin-bottom: 0.8rem;
     cursor: pointer;
+    background-color: #fbfbfb
 }
 
 /* ------ BACKGROUND COLORS ------ */
