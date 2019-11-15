@@ -114,6 +114,16 @@ p {
     padding: 1rem 3rem 3rem 3rem;
 }
 
+/* images */
+
+#mobile-spaces,
+#mobile-payment,
+#credit-card,
+#debit-card {
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
 /* header */
 
 header {
@@ -184,12 +194,7 @@ main {
     justify-content: stretch;
 }
 
-#mobile-spaces,
-#mobile-payment,
-#credit-card {
-    width: 100%;
-    margin-bottom: 1.2rem;
-}
+
 
 
 
