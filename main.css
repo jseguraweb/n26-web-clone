@@ -7,10 +7,26 @@
     font-family: 'Libre Franklin', 'Roboto', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    outline: none;
 }
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.green-point::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 7.5px;
+    background-color: #36A18B;
+    position: relative;
+    bottom: 15px;
 }
 
 .green-button {
@@ -30,12 +46,25 @@ a {
     transition-duration: 0.3s;
 }
 
-.link-with-arrow a:hover {
+.link a:hover {
     color: #36A18B
 }
 
 .align-center {
     text-align: center;
+}
+
+.download-button {
+    margin-right: 1rem;
+}
+
+select#countries {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem 1.8rem;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
 }
 
 /* ------ BACKGROUND COLORS ------ */
@@ -194,8 +223,58 @@ main {
     justify-content: stretch;
 }
 
+/* contact */
+
+#contact {
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    justify-items: flex-start;
+}
+
+.social-networks {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-networks li {
+    margin-right: 0.9rem;;
+}
 
 
+/* downloads */
 
+#downloads {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+
+#web-browser-button {
+    display: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1.5rem;
+}
+
+footer p,
+footer li{
+    font-size: 0.75rem;
+    line-height: 1.8;
+}
 
 } 
