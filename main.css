@@ -180,7 +180,7 @@ header {
     padding: 0.5rem 1.5rem;
 }
 
-nav {
+#navigation-menu {
     display: none;
     width: 100%;
     height: auto;
@@ -213,14 +213,13 @@ nav {
     justify-content: flex-start;
 }
 
-.languages span {
+.languages span a {
     color: rgb(194, 194, 194);
 }
 
 .green-button-nav {
     background-color: #36A18B;
     color: #fff;
-    margin-top: 2rem;
     font-size: 0.9rem;
     border: 0px;
     border-radius: 10px;
