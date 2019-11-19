@@ -79,7 +79,8 @@ li {
 }
 
 .download-button {
-    margin-right: 1rem;
+    font-size: 3rem;
+    margin-right: 3rem;
 }
 
 select#countries {
