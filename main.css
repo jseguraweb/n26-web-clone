@@ -1,12 +1,5 @@
 /* ------ RESET ------ */
 
-@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
-.test:before {
- font-family: "Font Awesome 5 Brands";
- font-weight: 400;
- content: "\f167";
-}
-
 * {
     margin: 0;
     padding: 0;
